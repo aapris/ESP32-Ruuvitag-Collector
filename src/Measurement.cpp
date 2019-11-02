@@ -71,14 +71,14 @@ std::string Measurement::toStr(Measurement::measurementFormatT measurementFormat
         sTemperature << "temperature=" << temperature;
         sPressure    << "pressure="    << pressure;
         sHumidity    << "humidity="    << humidity;
-        sAccelX      << "accelX="      << accelX;
-        sAccelY      << "accelY="      << accelY;
-        sAccelZ      << "accelZ="      << accelZ;
+        sAccelX      << "acceleration_x="              << accelX;
+        sAccelY      << "acceleration_y="              << accelY;
+        sAccelZ      << "acceleration_z="              << accelZ;
         sVoltage     << "battery="     << voltage;
         sEpoch       << "epoch="       << epoch;
-        sPower       << "txdbm="       << power;
-        sMovecount   << "move="        << moveCount;
-        sSequence    << "sequence="    << sequence;
+        sPower       << "tx_power="                    << power;
+        sMovecount   << "movement_counter="            << moveCount;
+        sSequence    << "measurement_sequence_number=" << sequence;
     }else{
         sTemperature << "t=" << temperature;
         sPressure    << "p=" << pressure;
